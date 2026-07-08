@@ -7,29 +7,24 @@
     <title>Document</title>
 </head>
 <style>
-    #btn1 {
-        display: flex;
-        justify-content: center;
-    }
 
-    #btn1 {
-        border-radius: 15%;
-        background-color: rgb(16, 121, 213);
-    }
 </style>
 
 <body>
-    <!-- <h1>Day 01</h1>
-    <button id="btn">Click Me</button> -->
+    <button id="btn">Enter Age</button>
+  <div id="age"></div>
 
-    <!-- //Day 02 -->
-    <p id="para">This is Good</p>
 
-    <button id="btn1">
-        Click Mel̥l̥ō
-    </button>
+    <script>
 
-    <script src="./script.js"></script>
+        let agediv = document.querySelector("#age");
+        let btn = document.querySelector("#btn");
+
+        btn.addEventListener("click", () => {
+            let age = prompt("Enter Your Age:")
+            agediv.innerText = `Your Age is ${age}`;
+        });
+    </script>
 
 
 </body>
